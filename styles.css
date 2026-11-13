@@ -1,0 +1,62 @@
+@font-face {
+        font-family: "Amore Christmas";
+        src: url("Amore Christmas.otf") format("opentype");
+    }
+body{
+    padding:40px;
+}
+.container {
+    font-family: "Amore Christmas";
+    text-align: center;
+    font-size: 300px;
+}
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: calc(25% - 20px);
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+
+p.text {
+    text-align: center;
+    font-size: 50px;
+}
+
+p.texts {
+    text-align: center;
+    font-size: 150px;
+}
+
+button img {
+ align-items: center;
+}
