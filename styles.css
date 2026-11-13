@@ -2,6 +2,28 @@
         font-family: "Amore Christmas";
         src: url("Amore Christmas.otf") format("opentype");
     }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 16px;
+  overflow-x: hidden;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+h1, h2 { font-size: clamp(22px, 6vw, 40px); }
+
 body{
     padding:40px;
 }
