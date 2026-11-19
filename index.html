@@ -146,31 +146,32 @@
       </div>
     </div>
 
-      <script>
-        function openSurvey() {
-          document.getElementById("question").textContent = "Hv u watched all the videos?";
-          document.getElementById("buttons").style.display = "block";
-          document.getElementById("survey").style.display = "flex";
+     <script>
+      function openSurvey() {
+        document.getElementById("question").textContent = "Hv u watched all the videos?";
+        document.getElementById("buttons").style.display = "block";
+        document.getElementById("survey").style.display = "flex";
+      }
+    
+      function closeSurvey() {
+        document.getElementById("survey").style.display = "none";
+        document.getElementById("question").textContent = "Hv u watched all the videos?";
+      }
+    
+      function answer(response) {
+        if (response === 'Yes') {
+          document.getElementById('question').innerHTML =
+            '<iframe src="https://drive.google.com/file/d/14nYBVsgLd5ZA3alN4SmXg8kfF0OIkS6N/preview" width="100%" height="250" allow="autoplay" allowfullscreen></iframe><br>' +
+            '<button onclick="closeSurvey()" style="font-size:20px; padding:8px 20px;">Close</button>';
+          document.getElementById('buttons').style.display = 'none';
+          setTimeout(closeSurvey, 5000);
+        } else {
+          document.getElementById('question').innerText = 'watch them first bitch';
+          document.getElementById('buttons').style.display = 'none';
+          setTimeout(closeSurvey, 1500);
         }
-
-        function answer(response) {
-          if (response === 'Yes') {
-            document.getElementById('question').innerHTML = 
-            ' <iframe src="https://drive.google.com/file/d/14nYBVsgLd5ZA3alN4SmXg8kfF0OIkS6N/view?usp=sharing"
-          width="100%" height="250" allow="autoplay" allowfullscreen></iframe>';
-            document.getElementById('buttons').style.display = 'none';
-            setTimeout(function () {
-              document.getElementById("survey").style.display = "none";
-            }, 10000);
-          } else {
-            document.getElementById('question').innerText = 'watch them first bitch';
-            document.getElementById('buttons').style.display = 'none';
-             setTimeout(function () {
-              document.getElementById("survey").style.display = "none";
-            }, 500);
-          }
-        }
-      </script>
+      }
+     </script>
 
 </div>
 
