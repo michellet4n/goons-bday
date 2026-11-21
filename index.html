@@ -136,7 +136,7 @@
      align-items:center; justify-content:center;">
 
       <div style="background:white; color:black; border-radius:16px;
-        width:50%; height:80%; display:flex; flex-direction:column;
+        width:50%; height:75%; display:flex; flex-direction:column;
         align-items:center; justify-content:center; text-align:center;">
 
         <h2 id="question" style="font-size:40px;">Hv u watched all the videos?</h2>
@@ -162,7 +162,7 @@
       function answer(response) {
         if (response === 'Yes') {
           document.getElementById('question').innerHTML =
-            '<iframe src="https://drive.google.com/file/d/14nYBVsgLd5ZA3alN4SmXg8kfF0OIkS6N/preview"allow="autoplay" allowfullscreen style="display:block; margin:0 auto; width:min(90%, 360px); aspect-ratio:9/16; max-height:70vh; border:0;"></iframe><br>' +
+            '<button onclick="window.open('https://drive.google.com/file/d/14nYBVsgLd5ZA3alN4SmXg8kfF0OIkS6N/view?usp=sharing', '_blank')">If u say so</button><br>' +
             '<button onclick="closeSurvey()" style="font-size:20px; padding:8px 20px;">Close</button>';
           document.getElementById('buttons').style.display = 'none';
         } else {
