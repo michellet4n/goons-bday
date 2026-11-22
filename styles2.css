@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: "EBGaramondital";
+  font-family: "EBGaramond";
   src: url("EBGaramond-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
@@ -32,8 +32,8 @@ img, video {
   margin: 0.3em 0;
 }
 p.texts {
-  font-family: "EBGaramondital";
   font-size: clamp(24px, 7vw, 60px);
+  font-style: italic;
 }
 
 /* Gallery: 4 columns on desktop, 2 on phones */
