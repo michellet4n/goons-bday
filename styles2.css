@@ -1,11 +1,15 @@
 @font-face {
   font-family: "EBGaramond";
   src: url("EBGaramond-VariableFont_wght.ttf") format("truetype");
+  font-weight:500;
+  font-style:normal;
 }
 
 @font-face {
   font-family: "EBGaramond";
   src: url("EBGaramond-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight:500;
+  font-style:italic;
 }
 
 * { box-sizing: border-box; }
