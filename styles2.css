@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Apple Garamond";
-  src: url("AppleGaramond-LightItalic.ttf") format("truetype");
+  font-family: "Relationship of mélodrame";
+  src: url("Relationship of mélodrame.ttf") format("truetype");
 }
 
 * { box-sizing: border-box; }
@@ -18,7 +18,7 @@ img, video {
 
 /* Title + messages: big on desktop, shrink on phones */
 .container {
-  font-family: "Apple Garamond";
+  font-family: "Relationship of mélodrame";
   text-align: center;
 }
 .container p {
