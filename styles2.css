@@ -25,6 +25,7 @@ img, video {
 .container {
   font-family: "EBGaramond";
   text-align: center;
+  font-style: normal;
 }
 .container p {
   font-size: clamp(40px, 12vw, 150px);
