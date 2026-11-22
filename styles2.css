@@ -28,6 +28,7 @@ img, video {
 }
 p.texts {
   font-size: clamp(24px, 7vw, 80px);
+  font-style: italic;
 }
 
 /* Gallery: 4 columns on desktop, 2 on phones */
