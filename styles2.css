@@ -3,6 +3,11 @@
   src: url("EBGaramond-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "EBGaramondital";
+  src: url("EBGaramond-Italic-VariableFont_wght.ttf") format("truetype");
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -27,8 +32,8 @@ img, video {
   margin: 0.3em 0;
 }
 p.texts {
+  font-family: "EBGaramondital";
   font-size: clamp(24px, 7vw, 60px);
-  font-variation-settings: "ital";
 }
 
 /* Gallery: 4 columns on desktop, 2 on phones */
