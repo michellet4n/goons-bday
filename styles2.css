@@ -46,6 +46,11 @@ p.texts {
   font-size: clamp(24px, 7vw, 60px);
   font-style: italic;
 }
+p.textss {
+  font-family: "EBGaramond";
+  font-size: clamp(21px, 7vw, 45px);
+  font-style: italic;
+}
 
 /* Gallery: 4 columns on desktop, 2 on phones */
 .gallery {
