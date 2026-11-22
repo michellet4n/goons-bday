@@ -12,6 +12,11 @@
   font-style:italic;
 }
 
+@font-face {
+  font-family: "AC";
+  src: url("Amore Christmas.otf") format("opentype");
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -27,7 +32,7 @@ img, video {
 
 /* Title + messages: big on desktop, shrink on phones */
 .container {
-  font-family: "EBGaramond";
+  font-family: "AC";
   text-align: center;
   font-style: normal;
 }
@@ -37,6 +42,7 @@ img, video {
   margin: 0.3em 0;
 }
 p.texts {
+  font-family: "EBGaramond";
   font-size: clamp(24px, 7vw, 60px);
   font-style: italic;
 }
