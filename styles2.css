@@ -47,8 +47,6 @@ p.texts {
   font-style: italic;
 }
 
-}
-
 /* Gallery: 4 columns on desktop, 2 on phones */
 .gallery {
   display: grid;
