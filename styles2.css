@@ -1,13 +1,13 @@
 @font-face {
-  font-family: "Relationship of mélodrame";
-  src: url("Relationship of mélodrame.ttf") format("truetype");
+  font-family: "EBGaramond";
+  src: url("EBGaramond-VariableFont_wght.ttf") format("truetype");
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  padding: 16px;
+  padding: 30px;
   overflow-x: hidden;
 }
 
@@ -18,7 +18,7 @@ img, video {
 
 /* Title + messages: big on desktop, shrink on phones */
 .container {
-  font-family: "Relationship of mélodrame";
+  font-family: "EBGaramond";
   text-align: center;
 }
 .container p {
